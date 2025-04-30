@@ -27,8 +27,10 @@ const CustomerForm = () => {
   });
   
   useEffect(() => {
+    
     if (isEditing) {
       fetchCustomerData();
+      console.log("CustomerForm mounted with ID:", id);
     } else {
       // Generate a unique ID for new customers
       setFormData({
@@ -49,6 +51,7 @@ const CustomerForm = () => {
       });
       
       const result = await response.json();
+      console.log("Fetched customer data:", result);
       
       if (result.success === 1 && result.data.length > 0) {
         const customer = result.data[0];

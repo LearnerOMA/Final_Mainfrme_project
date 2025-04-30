@@ -33,6 +33,14 @@ const Layout = ({ children }) => {
                   <span>Add Customer</span>
                 </Link>
               </li>
+              <li>
+                <Link 
+                  to="/dashboard" 
+                  className={`flex items-center p-3 rounded-lg hover:bg-blue-700 transition-colors ${isActive('/dashboard')}`}>
+                  <Home className="mr-3" size={20} />
+                  <span>Dashboard</span>
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
