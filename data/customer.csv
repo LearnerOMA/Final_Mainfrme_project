@@ -1,0 +1,21 @@
+ID,COMPANY_NAME,CONTACT_PERSON,PHONE,EMAIL,QUOTATION_ID,QUOTATION_REG,QUOTATION_EXP,TOTAL_AMOUNT,STATUS,ADDRESS,CITY,STATE
+CUST-0001,Acme Corporation,John Smith,555-123-4567,jsmith@acme.com,Q-2025-001,15-01-2025,15-04-2025,25000,1,123 Business Ave,New York,NY
+CUST-0002,TechGrowth Inc.,Sarah Johnson,555-234-5678,sjohnson@techgrowth.com,Q-2025-002,18-01-2025,18-04-2025,15750.5,0,456 Innovation Dr,San Francisco,CA
+CUST-0003,Global Solutions Ltd,Michael Wong,555-345-6789,mwong@globalsolutions.com,Q-2025-003,22-01-2025,22-04-2025,37200.75,1,789 Enterprise Blvd,Chicago,IL
+CUST-0004,Acme Corporation,John Smith,555-123-4567,jsmith@acme.com,Q-2025-004,25-01-2025,25-04-2025,42000,1,123 Business Ave,New York,NY
+CUST-0005,Bright Future Consulting,Robert Martinez,555-567-8901,rmartinez@brightfuture.com,Q-2025-005,28-01-2025,28-04-2025,18500.25,0,654 Consultant Way,Seattle,WA
+CUST-0006,Manufacturing Experts,Laura Peterson,555-678-9012,lpeterson@manuexperts.com,Q-2025-006,01-02-2025,01-05-2025,51250.8,1,987 Factory Lane,Detroit,MI
+CUST-0007,TechGrowth Inc.,Sarah Johnson,555-234-5678,sjohnson@techgrowth.com,Q-2025-007,03-02-2025,03-05-2025,22750,0,456 Innovation Dr,San Francisco,CA
+CUST-0008,Health Services Inc.,Emma Thompson,555-890-1234,ethompson@healthservices.com,Q-2025-008,05-02-2025,05-05-2025,67500.25,1,357 Medical Dr,Houston,TX
+CUST-0009,Acme Corporation,John Smith,555-123-4567,jsmith@acme.com,Q-2025-009,08-02-2025,08-05-2025,32400.5,1,123 Business Ave,New York,NY
+CUST-0010,Smart Education,Olivia Garcia,555-012-3456,ogarcia@smartedu.com,Q-2025-010,10-02-2025,10-05-2025,19800,0,951 Learning Ave,Atlanta,GA
+CUST-0011,Global Solutions Ltd,Michael Wong,555-345-6789,mwong@globalsolutions.com,Q-2025-011,12-02-2025,12-05-2025,28600.75,1,789 Enterprise Blvd,Chicago,IL
+CUST-0012,Construction Pros,Sophia Rodriguez,555-987-6543,srodriguez@constructionpros.com,Q-2025-012,15-02-2025,15-05-2025,73500,0,468 Builder Blvd,Denver,CO
+CUST-0013,TechGrowth Inc.,Sarah Johnson,555-234-5678,sjohnson@techgrowth.com,Q-2025-013,18-02-2025,18-05-2025,21300.25,1,456 Innovation Dr,San Francisco,CA
+CUST-0014,Security Solutions,Ethan Clark,555-765-4321,eclark@securitysolutions.com,Q-2025-014,20-02-2025,20-05-2025,45200.5,1,802 Protection Ave,Phoenix,AZ
+CUST-0015,Food Distributors Inc.,Ava Martinez,555-654-3210,amartinez@fooddist.com,Q-2025-015,22-02-2025,22-05-2025,29700,0,913 Tasty Blvd,Nashville,TN
+CUST-0016,Bright Future Consulting,Robert Martinez,555-567-8901,rmartinez@brightfuture.com,Q-2025-016,25-02-2025,25-05-2025,83250.75,1,654 Consultant Way,Seattle,WA
+CUST-0017,Legal Advisors,Isabella Thomas,555-432-1098,ithomas@legaladvisors.com,Q-2025-017,28-02-2025,28-05-2025,32100,0,246 Justice Rd,Philadelphia,PA
+CUST-0018,Acme Corporation,John Smith,555-123-4567,jsmith@acme.com,Q-2025-018,02-03-2025,02-06-2025,17800.5,1,123 Business Ave,New York,NY
+CUST-0019,Cloud Computing Services,Sofia Johnson,555-210-9876,sjohnson@cloudservices.com,Q-2025-019,05-03-2025,05-06-2025,61200.25,1,468 Digital Dr,San Jose,CA
+CUST-0020,Manufacturing Experts,Laura Peterson,555-678-9012,lpeterson@manuexperts.com,Q-2025-020,08-03-2025,08-06-2025,36400,0,987 Factory Lane,Detroit,MI
