@@ -188,8 +188,9 @@ const CustomerList = () => {
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
                     <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full 
-                      ${customer.STATUS === 1 ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'}`}>
-                      {customer.STATUS === 1 ? 'Active' : 'Pending'}
+                      ${customer.STATUS === true ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'}`}>
+                      {customer.STATUS === true? 'Active' : 'Pending'}
+                      
                     </span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">

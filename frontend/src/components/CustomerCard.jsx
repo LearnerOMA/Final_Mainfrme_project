@@ -24,10 +24,10 @@ const CustomerCard = ({ customer, onDelete }) => {
           </div>
           <span 
             className={`px-2 py-1 text-xs font-semibold rounded-full 
-              ${customer.STATUS === 1 ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'}`
+              ${customer.STATUS === true ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'}`
             }
           >
-            {customer.STATUS === 1 ? 'Active' : 'Pending'}
+            {customer.STATUS === true ? 'Active' : 'Pending'}
           </span>
         </div>
         

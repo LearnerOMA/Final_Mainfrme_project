@@ -39,6 +39,15 @@ app.use(function (req, res, next) {
 let connStr = "DATABASE="+process.env.DB_DATABASE+";HOSTNAME="+process.env.DB_HOSTNAME+";PORT="+process.env.DB_PORT+";PROTOCOL=TCPIP;UID="+process.env.DB_UID+";PWD="+process.env.DB_PWD+";";
 
 // CREATE - Add new home data
+app.get('/', function (request, response) {
+  ibmdb.open(connStr, function (err, conn) {
+    if( err) {
+      return response.json({ success: -1, message: err });
+    }else{
+      console.log('Connected to DB!');
+    }
+  })
+})
 app.post('/create', function (request, response) {
   const customer = JSON.parse(request.body['customer']);
 
@@ -94,21 +103,24 @@ app.post('/view', function(request, response){
 })
 
 // READ - Get specific home data by ID
-app.post('/viewByID', function(request, response){
-   ibmdb.open(connStr, function (err,conn) {
-     if (err){
-       return response.json({success:-1, message:err});
-     }
-     conn.query("SELECT * FROM "+process.env.DB_SCHEMA+".CUSTOMERS WHERE ID="+request.body.id+";", function (err, data) {
-       if (err){
-         return response.json({success:-2, message:err});
-       }
-       else{
-        return response.json({success:1, message:'Data Received!', data:data,data2:data2 });
-       }
-     });
-   });
-})
+app.post('/viewByID', function(request, response) {
+  ibmdb.open(connStr, function(err, conn) {
+    if (err) {
+      return response.json({ success: -1, message: err });
+    }
+
+    const query = `SELECT * FROM ${process.env.DB_SCHEMA}.CUSTOMERS WHERE ID = ?`;
+
+    conn.query(query, [request.body.id], function(err, data) {
+      if (err) {
+        return response.json({ success: -2, message: err });
+      } else {
+        return response.json({ success: 1, message: 'Data Received!', data: data });
+      }
+    });
+  });
+});
+
 
 // UPDATE - Update home data
 app.post('/update', function (request, response) {
@@ -168,9 +180,9 @@ app.post('/delete', function (request, response) {
 
     const schema = process.env.DB_SCHEMA;
     const id = request.body.id;
-    const deleteQuery = `DELETE FROM ${schema}.CUSTOMERS WHERE ID=${id};`;
+    const deleteQuery = `DELETE FROM ${schema}.CUSTOMERS WHERE ID = ?`;
 
-    conn.query(deleteQuery, function (err, data) {
+    conn.query(deleteQuery, [id], function (err, data) {
       conn.close(() => {
         if (err) {
           return response.json({ success: -2, message: err });
@@ -181,6 +193,7 @@ app.post('/delete', function (request, response) {
     });
   });
 });
+
 
 
 app.listen(8888, function(){
